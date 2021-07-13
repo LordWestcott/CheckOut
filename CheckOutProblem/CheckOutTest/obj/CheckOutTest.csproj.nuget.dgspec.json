@@ -1,0 +1,114 @@
+{
+  "format": 1,
+  "restore": {
+    "C:\\Users\\ollyf\\OneDrive\\Documents\\Projects\\CheckOut\\CheckOutProblem\\CheckOutTest\\CheckOutTest.csproj": {}
+  },
+  "projects": {
+    "C:\\Users\\ollyf\\OneDrive\\Documents\\Projects\\CheckOut\\CheckOutProblem\\CheckOutLogic\\CheckOutLogic.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\ollyf\\OneDrive\\Documents\\Projects\\CheckOut\\CheckOutProblem\\CheckOutLogic\\CheckOutLogic.csproj",
+        "projectName": "CheckOutLogic",
+        "projectPath": "C:\\Users\\ollyf\\OneDrive\\Documents\\Projects\\CheckOut\\CheckOutProblem\\CheckOutLogic\\CheckOutLogic.csproj",
+        "packagesPath": "C:\\Users\\ollyf\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\ollyf\\OneDrive\\Documents\\Projects\\CheckOut\\CheckOutProblem\\CheckOutLogic\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Microsoft\\Xamarin\\NuGet\\",
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\ollyf\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net472"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net472": {
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net472": {
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.101\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\ollyf\\OneDrive\\Documents\\Projects\\CheckOut\\CheckOutProblem\\CheckOutTest\\CheckOutTest.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\ollyf\\OneDrive\\Documents\\Projects\\CheckOut\\CheckOutProblem\\CheckOutTest\\CheckOutTest.csproj",
+        "projectName": "CheckOutTest",
+        "projectPath": "C:\\Users\\ollyf\\OneDrive\\Documents\\Projects\\CheckOut\\CheckOutProblem\\CheckOutTest\\CheckOutTest.csproj",
+        "packagesPath": "C:\\Users\\ollyf\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\ollyf\\OneDrive\\Documents\\Projects\\CheckOut\\CheckOutProblem\\CheckOutTest\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Microsoft\\Xamarin\\NuGet\\",
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\ollyf\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net472"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net472": {
+            "projectReferences": {
+              "C:\\Users\\ollyf\\OneDrive\\Documents\\Projects\\CheckOut\\CheckOutProblem\\CheckOutLogic\\CheckOutLogic.csproj": {
+                "projectPath": "C:\\Users\\ollyf\\OneDrive\\Documents\\Projects\\CheckOut\\CheckOutProblem\\CheckOutLogic\\CheckOutLogic.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net472": {
+          "dependencies": {
+            "Microsoft.NET.Test.Sdk": {
+              "target": "Package",
+              "version": "[16.2.0, )"
+            },
+            "coverlet.collector": {
+              "target": "Package",
+              "version": "[1.0.1, )"
+            },
+            "xunit": {
+              "target": "Package",
+              "version": "[2.4.0, )"
+            },
+            "xunit.runner.visualstudio": {
+              "target": "Package",
+              "version": "[2.4.0, )"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.101\\RuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}
