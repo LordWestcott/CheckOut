@@ -1,0 +1,7 @@
+C:\Users\ollyf\OneDrive\Documents\Projects\CheckOut\CheckOutProblem\CheckOutLogic\bin\Debug\net472\CheckOutLogic.dll
+C:\Users\ollyf\OneDrive\Documents\Projects\CheckOut\CheckOutProblem\CheckOutLogic\bin\Debug\net472\CheckOutLogic.pdb
+C:\Users\ollyf\OneDrive\Documents\Projects\CheckOut\CheckOutProblem\CheckOutLogic\obj\Debug\net472\CheckOutLogic.csprojAssemblyReference.cache
+C:\Users\ollyf\OneDrive\Documents\Projects\CheckOut\CheckOutProblem\CheckOutLogic\obj\Debug\net472\CheckOutLogic.AssemblyInfoInputs.cache
+C:\Users\ollyf\OneDrive\Documents\Projects\CheckOut\CheckOutProblem\CheckOutLogic\obj\Debug\net472\CheckOutLogic.AssemblyInfo.cs
+C:\Users\ollyf\OneDrive\Documents\Projects\CheckOut\CheckOutProblem\CheckOutLogic\obj\Debug\net472\CheckOutLogic.dll
+C:\Users\ollyf\OneDrive\Documents\Projects\CheckOut\CheckOutProblem\CheckOutLogic\obj\Debug\net472\CheckOutLogic.pdb
