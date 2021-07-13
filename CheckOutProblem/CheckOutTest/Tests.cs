@@ -84,7 +84,7 @@ namespace CheckOutTest
 
         public static IEnumerable<object[]> DATA_CartShouldContainScannedProduct()
         {
-            foreach (var product in new ProductList().Products)
+            foreach (var product in ProductList.Products)
             {
                 yield return new object[] { product };
             }
@@ -92,6 +92,30 @@ namespace CheckOutTest
         }
         #endregion
 
+        #region Total_Should_Be_Accurate
+        [Theory]
+        [MemberData(nameof(DATA_TotalShouldBeAccurate))]
+        public void Total_Should_Be_Accurate(decimal expected, Item[] items)
+        {
+            checkout.Cart.Clear();
+            foreach (var item in items)
+            {
+                checkout.Scan(item);
+            }
+
+            Assert.Equal(expected, checkout.Total());
+        }
+
+        public static IEnumerable<object[]> DATA_TotalShouldBeAccurate()
+        {
+            yield return new object[] { 0.5m, new Item[] { new ExampleProducts().TestProductA } };
+            yield return new object[] { 0.3m, new Item[] { new ExampleProducts().TestProductB } };
+            yield return new object[] { 0.6m, new Item[] { new ExampleProducts().TestProductC } };
+            yield return new object[] { 0.8m, new Item[] { new ExampleProducts().TestProductA, new ExampleProducts().TestProductB } };
+            yield return new object[] { 1.4m, new Item[] { new ExampleProducts().TestProductA, new ExampleProducts().TestProductB, new ExampleProducts().TestProductC } };
+            yield return new object[] { 0m, new Item[] { } };
+        }
+        #endregion
         #endregion
 
     }

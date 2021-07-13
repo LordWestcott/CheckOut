@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Linq;
 using CheckOutLogic.Objects;
 
 namespace CheckOutLogic
@@ -12,7 +13,7 @@ namespace CheckOutLogic
 
             public decimal Total()
             {
-                return 0m;
+                return Cart.Sum(o => o.UnitPrice);
             }
 
             public void Scan(Item item)
@@ -23,9 +24,13 @@ namespace CheckOutLogic
                     throw new ArgumentException("Item Scanned was null");
                 }
 
-                //todo - Check to see if item is valid Item.
+                //Check to see if item is on product list.
+                if (ProductList.Products.Exists(o => o.SKU == item.SKU))
+                {
+                    Cart.Add(item);
+                }
                 
-                Cart.Add(item);
+                
 
             }
         }

@@ -38,9 +38,9 @@ namespace CheckOutLogic
         };
     }
 
-    public class ProductList
+    public static class ProductList
     {
-        public List<Item> Products { get; set; } = new List<Item>()
+        public static List<Item> Products { get; set; } = new List<Item>()
         {
             new ExampleProducts().TestProductA,
             new ExampleProducts().TestProductB,
