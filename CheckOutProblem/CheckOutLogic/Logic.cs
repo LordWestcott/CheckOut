@@ -55,10 +55,12 @@ namespace CheckOutLogic
                 }
 
                 //Check to see if item is on product list.
-                if (ProductList.Products.Exists(o => o.SKU == item.SKU))
+                if (!ProductList.Products.Exists(o => o.SKU == item.SKU))
                 {
-                    Cart.Add(item);
+                    throw new ArgumentException("Item Scanned had unrecognised SKU");
                 }
+                
+                Cart.Add(item);
 
             }
         }

@@ -5,3 +5,11 @@ C:\Users\ollyf\OneDrive\Documents\Projects\CheckOut\CheckOutProblem\CheckOutLogi
 C:\Users\ollyf\OneDrive\Documents\Projects\CheckOut\CheckOutProblem\CheckOutLogic\obj\Debug\net472\CheckOutLogic.AssemblyInfo.cs
 C:\Users\ollyf\OneDrive\Documents\Projects\CheckOut\CheckOutProblem\CheckOutLogic\obj\Debug\net472\CheckOutLogic.dll
 C:\Users\ollyf\OneDrive\Documents\Projects\CheckOut\CheckOutProblem\CheckOutLogic\obj\Debug\net472\CheckOutLogic.pdb
+D:\projects\supplygo\CheckOut\CheckOutProblem\CheckOutLogic\bin\Debug\net472\CheckOutLogic.dll
+D:\projects\supplygo\CheckOut\CheckOutProblem\CheckOutLogic\bin\Debug\net472\CheckOutLogic.pdb
+D:\projects\supplygo\CheckOut\CheckOutProblem\CheckOutLogic\obj\Debug\net472\CheckOutLogic.csproj.AssemblyReference.cache
+D:\projects\supplygo\CheckOut\CheckOutProblem\CheckOutLogic\obj\Debug\net472\CheckOutLogic.AssemblyInfoInputs.cache
+D:\projects\supplygo\CheckOut\CheckOutProblem\CheckOutLogic\obj\Debug\net472\CheckOutLogic.AssemblyInfo.cs
+D:\projects\supplygo\CheckOut\CheckOutProblem\CheckOutLogic\obj\Debug\net472\CheckOutLogic.csproj.CoreCompileInputs.cache
+D:\projects\supplygo\CheckOut\CheckOutProblem\CheckOutLogic\obj\Debug\net472\CheckOutLogic.dll
+D:\projects\supplygo\CheckOut\CheckOutProblem\CheckOutLogic\obj\Debug\net472\CheckOutLogic.pdb

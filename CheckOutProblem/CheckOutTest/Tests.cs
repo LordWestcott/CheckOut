@@ -92,6 +92,28 @@ namespace CheckOutTest
         }
         #endregion
 
+        #region Cart_Should_Contain_Scanned_Product
+        [Theory]
+        [MemberData(nameof(DATA_UnrecognisedItemShouldThrowException))]
+        public void Unrecognised_Item_Should_Throw_Exception(Item item)
+        {
+            Assert.Throws<ArgumentException>(testCode: () => 
+            {
+                checkout.Scan(item); 
+            });
+        }
+
+        public static IEnumerable<object[]> DATA_UnrecognisedItemShouldThrowException()
+        {
+            foreach (var product in ProductList.Products)
+            {
+                yield return new object[] { new Item() { SKU = "Z99", UnitPrice = 0.5m } };
+            }
+
+        }
+        #endregion
+
+
         #region Total_Should_Be_Accurate
         [Theory]
         [MemberData(nameof(DATA_TotalShouldBeAccurate))]

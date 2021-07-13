@@ -1,26 +1,26 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\ollyf\\OneDrive\\Documents\\Projects\\CheckOut\\CheckOutProblem\\CheckOutTest\\CheckOutTest.csproj": {}
+    "D:\\projects\\supplygo\\CheckOut\\CheckOutProblem\\CheckOutTest\\CheckOutTest.csproj": {}
   },
   "projects": {
-    "C:\\Users\\ollyf\\OneDrive\\Documents\\Projects\\CheckOut\\CheckOutProblem\\CheckOutLogic\\CheckOutLogic.csproj": {
+    "D:\\projects\\supplygo\\CheckOut\\CheckOutProblem\\CheckOutLogic\\CheckOutLogic.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\ollyf\\OneDrive\\Documents\\Projects\\CheckOut\\CheckOutProblem\\CheckOutLogic\\CheckOutLogic.csproj",
+        "projectUniqueName": "D:\\projects\\supplygo\\CheckOut\\CheckOutProblem\\CheckOutLogic\\CheckOutLogic.csproj",
         "projectName": "CheckOutLogic",
-        "projectPath": "C:\\Users\\ollyf\\OneDrive\\Documents\\Projects\\CheckOut\\CheckOutProblem\\CheckOutLogic\\CheckOutLogic.csproj",
-        "packagesPath": "C:\\Users\\ollyf\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\ollyf\\OneDrive\\Documents\\Projects\\CheckOut\\CheckOutProblem\\CheckOutLogic\\obj\\",
+        "projectPath": "D:\\projects\\supplygo\\CheckOut\\CheckOutProblem\\CheckOutLogic\\CheckOutLogic.csproj",
+        "packagesPath": "C:\\Users\\obifi\\.nuget\\packages\\",
+        "outputPath": "D:\\projects\\supplygo\\CheckOut\\CheckOutProblem\\CheckOutLogic\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
-          "C:\\Microsoft\\Xamarin\\NuGet\\",
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
         ],
         "configFilePaths": [
-          "C:\\Users\\ollyf\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
+          "C:\\Users\\obifi\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
           "net472"
@@ -31,6 +31,7 @@
         },
         "frameworks": {
           "net472": {
+            "targetAlias": "net472",
             "projectReferences": {}
           }
         },
@@ -42,27 +43,28 @@
       },
       "frameworks": {
         "net472": {
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.101\\RuntimeIdentifierGraph.json"
+          "targetAlias": "net472",
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.301\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\ollyf\\OneDrive\\Documents\\Projects\\CheckOut\\CheckOutProblem\\CheckOutTest\\CheckOutTest.csproj": {
+    "D:\\projects\\supplygo\\CheckOut\\CheckOutProblem\\CheckOutTest\\CheckOutTest.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\ollyf\\OneDrive\\Documents\\Projects\\CheckOut\\CheckOutProblem\\CheckOutTest\\CheckOutTest.csproj",
+        "projectUniqueName": "D:\\projects\\supplygo\\CheckOut\\CheckOutProblem\\CheckOutTest\\CheckOutTest.csproj",
         "projectName": "CheckOutTest",
-        "projectPath": "C:\\Users\\ollyf\\OneDrive\\Documents\\Projects\\CheckOut\\CheckOutProblem\\CheckOutTest\\CheckOutTest.csproj",
-        "packagesPath": "C:\\Users\\ollyf\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\ollyf\\OneDrive\\Documents\\Projects\\CheckOut\\CheckOutProblem\\CheckOutTest\\obj\\",
+        "projectPath": "D:\\projects\\supplygo\\CheckOut\\CheckOutProblem\\CheckOutTest\\CheckOutTest.csproj",
+        "packagesPath": "C:\\Users\\obifi\\.nuget\\packages\\",
+        "outputPath": "D:\\projects\\supplygo\\CheckOut\\CheckOutProblem\\CheckOutTest\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
-          "C:\\Microsoft\\Xamarin\\NuGet\\",
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
         ],
         "configFilePaths": [
-          "C:\\Users\\ollyf\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
+          "C:\\Users\\obifi\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
           "net472"
@@ -73,9 +75,10 @@
         },
         "frameworks": {
           "net472": {
+            "targetAlias": "net472",
             "projectReferences": {
-              "C:\\Users\\ollyf\\OneDrive\\Documents\\Projects\\CheckOut\\CheckOutProblem\\CheckOutLogic\\CheckOutLogic.csproj": {
-                "projectPath": "C:\\Users\\ollyf\\OneDrive\\Documents\\Projects\\CheckOut\\CheckOutProblem\\CheckOutLogic\\CheckOutLogic.csproj"
+              "D:\\projects\\supplygo\\CheckOut\\CheckOutProblem\\CheckOutLogic\\CheckOutLogic.csproj": {
+                "projectPath": "D:\\projects\\supplygo\\CheckOut\\CheckOutProblem\\CheckOutLogic\\CheckOutLogic.csproj"
               }
             }
           }
@@ -88,6 +91,7 @@
       },
       "frameworks": {
         "net472": {
+          "targetAlias": "net472",
           "dependencies": {
             "Microsoft.NET.Test.Sdk": {
               "target": "Package",
@@ -106,7 +110,7 @@
               "version": "[2.4.0, )"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.101\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.301\\RuntimeIdentifierGraph.json"
         }
       }
     }
