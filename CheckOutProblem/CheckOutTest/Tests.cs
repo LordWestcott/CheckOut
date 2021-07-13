@@ -108,11 +108,38 @@ namespace CheckOutTest
 
         public static IEnumerable<object[]> DATA_TotalShouldBeAccurate()
         {
+            //test individual
             yield return new object[] { 0.5m, new Item[] { new ExampleProducts().TestProductA } };
             yield return new object[] { 0.3m, new Item[] { new ExampleProducts().TestProductB } };
             yield return new object[] { 0.6m, new Item[] { new ExampleProducts().TestProductC } };
+
+            //test with offer trigger
+            yield return new object[] { 1.3m, new Item[] { new ExampleProducts().TestProductA, new ExampleProducts().TestProductA, new ExampleProducts().TestProductA } };
+            yield return new object[] { 0.45m, new Item[] { new ExampleProducts().TestProductB, new ExampleProducts().TestProductB } };
+
+            //test multi no offer trigger products.
+            yield return new object[] { 1.2m, new Item[] { new ExampleProducts().TestProductC, new ExampleProducts().TestProductC } };
+            
+            //test with offer trigger and surplus
+            yield return new object[] { 1.8m, new Item[] { new ExampleProducts().TestProductA, new ExampleProducts().TestProductA, new ExampleProducts().TestProductA, new ExampleProducts().TestProductA } };
+            yield return new object[] { 0.75m, new Item[] { new ExampleProducts().TestProductB, new ExampleProducts().TestProductB, new ExampleProducts().TestProductB } };
+
+            //test multi products - no offer trigger.
             yield return new object[] { 0.8m, new Item[] { new ExampleProducts().TestProductA, new ExampleProducts().TestProductB } };
             yield return new object[] { 1.4m, new Item[] { new ExampleProducts().TestProductA, new ExampleProducts().TestProductB, new ExampleProducts().TestProductC } };
+
+            //test multi products - with offer trigger.
+            yield return new object[] { 0.95m, new Item[] { new ExampleProducts().TestProductB, new ExampleProducts().TestProductA, new ExampleProducts().TestProductB } };
+            yield return new object[] { 6.5m, new Item[]
+                {
+                    new ExampleProducts().TestProductA, new ExampleProducts().TestProductB, new ExampleProducts().TestProductC,
+                    new ExampleProducts().TestProductA, new ExampleProducts().TestProductB, new ExampleProducts().TestProductC,
+                    new ExampleProducts().TestProductA, new ExampleProducts().TestProductB, new ExampleProducts().TestProductC,
+                    new ExampleProducts().TestProductA, new ExampleProducts().TestProductB, new ExampleProducts().TestProductC,
+                    new ExampleProducts().TestProductA, new ExampleProducts().TestProductB, new ExampleProducts().TestProductC,
+                } };
+
+            //test no product.
             yield return new object[] { 0m, new Item[] { } };
         }
         #endregion

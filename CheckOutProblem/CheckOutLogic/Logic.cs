@@ -13,7 +13,37 @@ namespace CheckOutLogic
 
             public decimal Total()
             {
-                return Cart.Sum(o => o.UnitPrice);
+                decimal total = 0;
+                
+                //Group items by SKU.
+                var DistinctItemGroups = Cart.GroupBy(o => o.SKU).ToList();
+
+
+                foreach (var group in DistinctItemGroups)
+                {
+                    //Retrieve Item details.
+                    var item = group.First(); 
+                    
+                    if (item.ItemOffer == null)
+                    {
+                        //If no offer, increase total by price of units.
+                        total += item.UnitPrice * group.Count();
+                        continue;
+                    }
+
+                    //Find total for items eligible for discount.
+                    var OfferCount = @group.Count() / item.ItemOffer.OfferQuant;
+                    var TotalOfferPrice = OfferCount * item.ItemOffer.OfferPrice;
+
+                    //Find total for extra items.
+                    var ItemsNotIncluded = @group.Count() % item.ItemOffer.OfferQuant;
+                    var TotalNotIncludedPrice = ItemsNotIncluded * item.UnitPrice;
+
+                    //increase total.
+                    total += TotalOfferPrice + TotalNotIncludedPrice;
+                }
+
+                return total;
             }
 
             public void Scan(Item item)
@@ -29,8 +59,6 @@ namespace CheckOutLogic
                 {
                     Cart.Add(item);
                 }
-                
-                
 
             }
         }
