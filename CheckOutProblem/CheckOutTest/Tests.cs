@@ -92,7 +92,7 @@ namespace CheckOutTest
         }
         #endregion
 
-        #region Cart_Should_Contain_Scanned_Product
+        #region Unrecognised_Item_Should_Throw_Exception
         [Theory]
         [MemberData(nameof(DATA_UnrecognisedItemShouldThrowException))]
         public void Unrecognised_Item_Should_Throw_Exception(Item item)
